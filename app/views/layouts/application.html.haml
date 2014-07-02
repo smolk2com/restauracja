@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title MojaStrona
+    = stylesheet_link_tag    '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', media: 'all'
+    = stylesheet_link_tag    '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', media: 'all'
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application', media: 'all'
+    = javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', media: 'all'
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    = csrf_meta_tags
+  %body
+    .row.first
+      .col-sm-12
+        = render 'layouts/home_panel'
+    .row.new
+      .col-sm-12
+        = render 'layouts/background'
+    .container
+      = yield

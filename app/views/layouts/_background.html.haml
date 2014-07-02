@@ -1,0 +1,13 @@
+.container
+  #myCarousel.carousel.slide
+    .carousel-inner
+      .active.item
+        = image_tag( "obraz1.jpg")
+      .item
+        = image_tag( "obraz2.jpg")
+      .item
+        = image_tag( "obraz3.jpg")
+    %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel"}
+      %span.glyphicon.glyphicon-arrow-left
+    %a.carousel-control.right{"data-slide" => "next", href: "#myCarousel"}
+      %span.glyphicon.glyphicon-arrow-right
