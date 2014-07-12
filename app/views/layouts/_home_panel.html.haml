@@ -2,7 +2,7 @@
 .container
   .col-md-3.col-md-offset-1
     %br
-    = image_tag( "http://www.sowaiprzyjaciele.pl/wp-content/themes/sowa_wordpress/images/logoa.png", alt: "Example Image")
+    = link_to image_tag("obraz5.jpg"), home_index_path
   %br
   %br
   %br
@@ -58,10 +58,10 @@
         Aktualności
       %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", role: "menu"}
         %li{role: "presentation"}
-          %a{href: "#", role: "menuitem", tabindex: "-1"} Wydarzy się
+          =link_to 'Wydarzy się', aktualnosci_wydarzysie_index_path
         %li.divider{role: "presentation"}
         %li{role: "presentation"}
-          %a{href: "#", role: "menuitem", tabindex: "-1"} Wydarzyło się
+          =link_to 'Wydarzyło się', aktualnosci_wydarzylosie_index_path
         %li.divider{role: "presentation"}
         %li{role: "presentation"}
           %a{href: "#", role: "menuitem", tabindex: "-1"} Media o nas

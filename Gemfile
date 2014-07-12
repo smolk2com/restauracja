@@ -35,7 +35,6 @@ gem "haml-rails"
 gem 'noty-rails'
 gem 'simple_form'
 gem "select2-rails"
-gem 'paperclip'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
